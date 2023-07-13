@@ -1,5 +1,5 @@
 {
-    "name": "amphp/beanstalk",
+    "name": "eichie/beanstalk",
     "description": "Async beanstalk driver for Amp.",
     "license": "MIT",
     "authors": [
@@ -17,12 +17,15 @@
         "amphp/amp": "^2",
         "amphp/socket": "^1.0",
         "amphp/uri": "^0.1",
-        "symfony/yaml": "^3.3|^4|^5"
+        "symfony/yaml": "^3.3|^4|^5|^5"
     },
     "require-dev": {
         "amphp/phpunit-util": "^1",
         "phpunit/phpunit": "^6",
         "friendsofphp/php-cs-fixer": "^2.3"
+    },
+    "replace": {
+       "amphp/beanstalk":"*"
     },
     "config": {
         "platform": {
